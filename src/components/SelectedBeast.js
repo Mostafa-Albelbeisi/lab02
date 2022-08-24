@@ -16,6 +16,7 @@ class SelectedBeast extends React.Component {
       numOfPets: this.state.numOfPets + "🦁",
     });
   };
+  
 
   render() {
     const displayModal = this.props.displayModal;

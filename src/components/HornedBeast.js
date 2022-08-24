@@ -29,7 +29,7 @@ class HornedBeast extends React.Component {
             src={this.props.img}
             onClick={this.incrementNumOfPets}
           />
-          <Card.Body onClick={this.seeMe}>
+          <Card.Body >
             <Card.Text>Number of picture: {this.state.numOfPets}</Card.Text>
 
             <Card.Title>{this.props.title}</Card.Title>
@@ -37,6 +37,7 @@ class HornedBeast extends React.Component {
             <Card.Text>{this.props.description}</Card.Text>
             <Card.Text>{this.props.keyword}</Card.Text>
             <Card.Text>{this.props.horns}</Card.Text>
+            <button onClick={this.seeMe}>Open</button>
           </Card.Body>
         </Card>
       </Col>
