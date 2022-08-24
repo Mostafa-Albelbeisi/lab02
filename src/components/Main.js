@@ -1,6 +1,7 @@
 import React from "react";
 import HornedBeast from "./HornedBeast";
 import Row from "react-bootstrap/Row";
+import Filter from "./Filter";
 // import data from "./Data";
 
 // let callBeast = data.map((element) => (
@@ -17,6 +18,9 @@ import Row from "react-bootstrap/Row";
 class Main extends React.Component {
   render() {
     return (
+<>
+    <Filter showBeasts = {this.props.showBeasts} />
+        <div>
       <Row xs={1} md={3} className="g-4">
         {this.props.beasts.map((beast, index) => {
           return (
@@ -31,7 +35,8 @@ class Main extends React.Component {
             </div>
           );
         })}
-      </Row>
+      </Row></div>
+      </>
     );
   }
 }
